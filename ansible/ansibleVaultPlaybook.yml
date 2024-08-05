@@ -1,0 +1,10 @@
+---
+- name: Use Ansible Vault
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - passwort.txt
+  tasks:
+    - name: Show Password
+      debug:
+        var: meinPasswort
